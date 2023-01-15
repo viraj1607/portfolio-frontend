@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import * as THREE from "three";
-import { GLTFLoader } from "../../three-extra/gltfLoader";
+// import * as THREE from "three";
+// import { GLTFLoader } from "../../three-extra/gltfLoader";
 import LaptopModel from "../../model/laptop.glb";
+import LaptopImg from "../../model/laptop.webp";
 import "./Home.scss";
 function Home() {
   useEffect(() => {
@@ -9,11 +10,17 @@ function Home() {
     setTimeout(() => {
       stopAnim();
     }, 6000);
+    setTimeout(() => {
+      stopRotate();
+    }, 7000);
   }, []);
 
   const stopAnim = () => {
     document.getElementById("model").pause();
-    console.log("model element", document.getElementById("model").autoRotate);
+    // console.log("model element", document.getElementById("model").autoRotate);
+  };
+  const stopRotate = () => {
+    document.getElementById("model").autoRotate = false;
   };
 
   // const loadModel = () => {
@@ -58,10 +65,14 @@ function Home() {
   // };
   return (
     <div className="home-container" id="home">
-      {/* <div className="text-container">
+      <div className="text-container">
         <p>Viraj Merai</p>
-        <h2>Full Stack Developer</h2>
-      </div> */}
+        <h4>I'm a</h4>
+        <h2>
+          Full Stack <span>+</span> AR / VR
+        </h2>
+        <h3>Developer</h3>
+      </div>
       <div className="model-container">
         <model-viewer
           // camera-controls

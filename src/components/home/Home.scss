@@ -3,17 +3,38 @@
     width: 92vw;
     height: 100%;
     overflow: hidden;
+    position: absolute;
+    background-image: linear-gradient(to right,#000000 0%,#000000 60%,#414141 100%);
     .text-container{
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12%;
         p{
             // #cc2b5e → #753a88
-            text-transform: uppercase;
             color: aquamarine;
-            margin: 0;
+            font-size: 28px;
             font-weight: 700;
+        }
+        h4{
+            color:white;
+            margin:0;
+            font-size: 22px;
         }
         h2{
             color: white;
-            font-size: 35px;
+            font-size: 50px;
+            margin:0;
+            span{
+                color: aquamarine;
+            }
+        }
+        h3{
+            color: white;
+            font-size: 40px;
+            margin: 0;
+            text-align: end;
         }
     }
     .model-container{
@@ -21,12 +42,13 @@
         width: 600px;
         // background-color: aliceblue;
         position: absolute;
-        right: 10%;
+        right: 8%;
         top: 50%;
         transform: translateY(-50%);
         model-viewer{
             width: 100%;
             height: 100%;
+            --progress-bar-color: transparent;
         }
     }
 }
