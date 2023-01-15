@@ -3,7 +3,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
 import Sidebar from "./components/sidebar/Sidebar";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -15,6 +15,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
     </div>

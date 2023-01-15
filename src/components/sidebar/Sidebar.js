@@ -12,12 +12,14 @@ function Sidebar() {
         <img src={myLogo} alt="my logo" />
       </div>
       <ul>
-        <li>Home</li>
+        <Link to="/" className="router-link">
+          <li>Home</li>
+        </Link>
         <Link to="/about" className="router-link">
           <li>About</li>
         </Link>
         <li>Portfolio</li>
-        <li>Resume</li>
+        <li>Work-ex</li>
         <Link to="/contact" className="router-link">
           <li>Contact</li>
         </Link>
