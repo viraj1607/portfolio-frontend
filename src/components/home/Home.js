@@ -9,10 +9,10 @@ function Home() {
     // loadModel();
     setTimeout(() => {
       stopAnim();
-    }, 6000);
+    }, 7000);
     setTimeout(() => {
       stopRotate();
-    }, 7000);
+    }, 8000);
   }, []);
 
   const stopAnim = () => {
