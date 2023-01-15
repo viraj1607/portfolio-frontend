@@ -8,7 +8,7 @@ function Loader() {
     setTimeout(() => {
       document.getElementById("loader").classList.add("hidden");
       //   document.getElementById("loader").style.transition = "display 5s linear";
-    }, 1500);
+    }, 2000);
   });
   return (
     <div id="loader">
