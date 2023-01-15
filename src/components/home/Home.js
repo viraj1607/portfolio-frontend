@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 // import * as THREE from "three";
 // import { GLTFLoader } from "../../three-extra/gltfLoader";
 import LaptopModel from "../../model/laptop.glb";
-import LaptopImg from "../../model/laptop.webp";
+// import LaptopImg from "../../model/laptop.webp";
 import "./Home.scss";
 function Home() {
   useEffect(() => {
