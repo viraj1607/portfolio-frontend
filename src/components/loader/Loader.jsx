@@ -6,7 +6,8 @@ import "./Loader.scss";
 function Loader() {
   useEffect(() => {
     setTimeout(() => {
-      document.getElementById("loader").style.display = "none";
+      document.getElementById("loader").classList.add("hidden");
+      //   document.getElementById("loader").style.transition = "display 5s linear";
     }, 1500);
   });
   return (
