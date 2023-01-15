@@ -22,7 +22,9 @@ import "./About.scss";
 function About() {
   return (
     <div className="about-container">
-      <h2>About Me</h2>
+      <h2>
+        <span>A</span>bout <span>M</span>e
+      </h2>
       <div className="about-info">
         <div className="explorer-section">
           <div className="explorer-header">

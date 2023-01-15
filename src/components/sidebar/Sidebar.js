@@ -7,7 +7,7 @@ import "./Sidebar.scss";
 
 function Sidebar() {
   return (
-    <div className="sidebar-container">
+    <div className="sidebar-container" id="sidebar">
       <div className="logo-container">
         <img src={myLogo} alt="my logo" />
       </div>
@@ -24,7 +24,7 @@ function Sidebar() {
           <li>Contact</li>
         </Link>
       </ul>
-      <div className="social-icons">
+      <div className="social-icons" id="social">
         <BsLinkedin />
         <AiFillGithub />
       </div>

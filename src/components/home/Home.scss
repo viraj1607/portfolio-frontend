@@ -5,6 +5,14 @@
     overflow: hidden;
     position: absolute;
     background-image: linear-gradient(to right,#000000 0%,#000000 60%,#414141 100%);
+    .theme-icon{
+        color: white;
+        position: absolute;
+        right: 3%;
+        top: 5%;
+        font-size: 25px;
+        cursor: pointer;
+    }
     .text-container{
         position: absolute;
         z-index: 2;
@@ -19,22 +27,44 @@
         }
         h4{
             color:white;
-            margin:0;
+            margin-bottom:15px;
             font-size: 22px;
         }
+        .h4-light{
+            color: black !important;
+        }
         h2{
-            color: white;
+            color: aquamarine;
             font-size: 50px;
             margin:0;
             span{
+                color: white;
+                padding: 0px 8px;
+            }
+            .text1{
+                border-top: 2px dashed aquamarine;
+                border-left: 2px dashed aquamarine;
+            }
+            .text2{
+                border-bottom: 2px dashed aquamarine;
+                border-right: 2px dashed aquamarine;
+            }
+        }
+        .h2-light{
+            color: black !important;
+            span{
                 color: aquamarine;
             }
+            
         }
         h3{
             color: white;
             font-size: 40px;
             margin: 0;
             text-align: end;
+        }
+        .h3-light{
+            color: black !important;
         }
     }
     .model-container{

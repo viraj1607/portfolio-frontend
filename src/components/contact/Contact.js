@@ -5,7 +5,9 @@ function Contact() {
   return (
     <div className="contact-container">
       <form>
-        <h2>Ping Me !!</h2>
+        <h2>
+          <span>P</span>ing <span>M</span>e <span>!</span>
+        </h2>
         <input placeholder="Email" />
         <input placeholder="Message" />
         <div>Send</div>

@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 // import * as THREE from "three";
 // import { GLTFLoader } from "../../three-extra/gltfLoader";
+import { BsFillSunFill } from "react-icons/bs";
 import LaptopModel from "../../model/laptop.glb";
 // import LaptopImg from "../../model/laptop.webp";
+
 import "./Home.scss";
 function Home() {
   useEffect(() => {
@@ -63,15 +65,27 @@ function Home() {
   //     renderer.render(scene, camera);
   //   });
   // };
+  const themeChange = () => {
+    document.getElementById("home").style.backgroundImage =
+      "linear-gradient(to right,#ffffff 0%,#ffffff 60%,#414141 100%)";
+    document.getElementById("h4-light").classList.add("h4-light");
+    document.getElementById("h2-light").classList.add("h2-light");
+    document.getElementById("h3-light").classList.add("h3-light");
+    document.body.style.backgroundColor = "white";
+    document.getElementById("sidebar").classList.add("sidebar-container-light");
+    document.getElementById("social").classList.add("social-icons-light");
+  };
   return (
     <div className="home-container" id="home">
+      {/* <BsFillSunFill onClick={themeChange} className="theme-icon" /> */}
       <div className="text-container">
         <p>Viraj Merai</p>
-        <h4>I'm a</h4>
-        <h2>
-          Full Stack <span>+</span> AR / VR
+        <h4 id="h4-light">I'm a</h4>
+        <h2 id="h2-light">
+          <span className="text1">Full Stack</span> +{" "}
+          <span className="text2">AR / VR</span>
         </h2>
-        <h3>Developer</h3>
+        <h3 id="h3-light">Developer</h3>
       </div>
       <div className="model-container">
         <model-viewer

@@ -37,6 +37,14 @@
     }
 }
 
+.sidebar-container-light{
+    ul{
+        li{
+            color: black;
+        }
+    }
+}
+
 
 .logo-container{
     padding: 20px;
@@ -68,4 +76,10 @@
         border: 1px dashed aquamarine;
         border-radius: 5px;
     }
+}
+
+.social-icons-light{
+    svg{
+        color: black
+    };
 }
