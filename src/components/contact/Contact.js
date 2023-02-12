@@ -9,6 +9,7 @@ function Contact() {
           <span>P</span>ing <span>M</span>e <span>!</span>
         </h2>
         <input placeholder="Email" />
+        <input placeholder="Mobile No." />
         <input placeholder="Message" />
         <div>Send</div>
       </form>

@@ -5,10 +5,9 @@ import "./Loader.scss";
 
 function Loader() {
   useEffect(() => {
-    setTimeout(() => {
+    document.getElementById("model").addEventListener("load", () => {
       document.getElementById("loader").classList.add("hidden");
-      //   document.getElementById("loader").style.transition = "display 5s linear";
-    }, 2000);
+    });
   });
   return (
     <div id="loader">
