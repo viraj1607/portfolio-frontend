@@ -8,14 +8,19 @@ import LaptopModel from "../../model/laptop.glb";
 import "./Home.scss";
 function Home() {
   useEffect(() => {
-    // loadModel();
+    document.getElementById("model").addEventListener("load", () => {
+      modelHandle();
+    });
+  }, []);
+
+  const modelHandle = () => {
     setTimeout(() => {
       stopAnim();
     }, 7000);
     setTimeout(() => {
       stopRotate();
     }, 8000);
-  }, []);
+  };
 
   const stopAnim = () => {
     document.getElementById("model").pause();
