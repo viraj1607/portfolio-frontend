@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 // import * as THREE from "three";
 // import { GLTFLoader } from "../../three-extra/gltfLoader";
-import { BsFillSunFill } from "react-icons/bs";
+// import { BsFillSunFill } from "react-icons/bs";
 import LaptopModel from "../../model/laptop.glb";
 // import LaptopImg from "../../model/laptop.webp";
 
@@ -65,16 +65,16 @@ function Home() {
   //     renderer.render(scene, camera);
   //   });
   // };
-  const themeChange = () => {
-    document.getElementById("home").style.backgroundImage =
-      "linear-gradient(to right,#ffffff 0%,#ffffff 60%,#414141 100%)";
-    document.getElementById("h4-light").classList.add("h4-light");
-    document.getElementById("h2-light").classList.add("h2-light");
-    document.getElementById("h3-light").classList.add("h3-light");
-    document.body.style.backgroundColor = "white";
-    document.getElementById("sidebar").classList.add("sidebar-container-light");
-    document.getElementById("social").classList.add("social-icons-light");
-  };
+  // const themeChange = () => {
+  //   document.getElementById("home").style.backgroundImage =
+  //     "linear-gradient(to right,#ffffff 0%,#ffffff 60%,#414141 100%)";
+  //   document.getElementById("h4-light").classList.add("h4-light");
+  //   document.getElementById("h2-light").classList.add("h2-light");
+  //   document.getElementById("h3-light").classList.add("h3-light");
+  //   document.body.style.backgroundColor = "white";
+  //   document.getElementById("sidebar").classList.add("sidebar-container-light");
+  //   document.getElementById("social").classList.add("social-icons-light");
+  // };
   return (
     <div className="home-container" id="home">
       {/* <BsFillSunFill onClick={themeChange} className="theme-icon" /> */}
